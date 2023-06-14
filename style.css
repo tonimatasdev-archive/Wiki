@@ -1,0 +1,21 @@
+.barra-superior {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.barra-superior button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.barra-superior button:hover {
+  background-color: #aaa;
+}
