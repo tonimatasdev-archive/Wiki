@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic information -->
+    <title>Example Wiki</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Get wiki content -->
+    <script>
+        getContent('home');
+        getContent('configurations');
+        getContent('commands');
+        getContent('events');
+    </script>
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Example</h1>
+    </div>
+
+    <div id="content">
+        <div id="sidebar">
+            <ul id="buttons">
+                <li><a id="homeButton" class="sidebarButton" onclick="showContent('home')">Home</a></li>
+                <li><a id="configurationsButton" class="sidebarButton" onclick="showContent('configurations')">Configurations</a></li>
+                <li><a id="commandsButton" class="sidebarButton" onclick="showContent('commands')">Commands</a></li>
+                <li><a id="eventsButton" class="sidebarButton" onclick="showContent('events')">Events</a></li>
+            </ul>
+        </div>
+
+        <div id="main-content">
+
+            <div id="home" class="wikiContent">
+                <div id="home-markdown"></div>
+            </div>
+
+            <div id="configurations" class="wikiContent" style="display: none;">
+                <div id="configurations-markdown"></div>
+            </div>
+
+            <div id="commands" class="wikiContent" style="display: none;">
+                <div id="commands-markdown"></div>
+            </div>
+
+            <div id="events" class="wikiContent" style="display: none;">
+                <div id="events-markdown"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

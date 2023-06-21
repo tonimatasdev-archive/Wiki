@@ -18,24 +18,27 @@ body {
   border-radius: 12px;
   border: 1px solid #686f79;
   padding: 10px;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 h1 {
-  color: #fff;
+  color: white;
   margin: 0;
   padding: 0;
 }
 
 #content {
   display: flex;
-  flex-grow: 1;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 #sidebar {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
   background-color: #151920;
   width: 200px;
+  min-width: 200px;
   border-radius: 12px;
   border: 1px solid #686f79;
 }
@@ -48,13 +51,12 @@ h1 {
 .sidebarButton {
   display: block;
   padding: 10px;
+  margin: 10px 10px;
   background-color: #262b32;
   color: #fff;
-  text-decoration: none;
   border-radius: 12px;
   border: 1px solid #686f79;
   transition: background-color 0.2s ease;
-  margin: 0 10px 10px;
   cursor: pointer;
 }
 
@@ -63,7 +65,14 @@ h1 {
 }
 
 #main-content {
-  margin-bottom: 18px;
-  margin-right: 18px;
-  margin-left: 18px;
+  background-color: #151920;
+  border-radius: 12px;
+  border: 1px solid #686f79;
+  margin-left: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wikiContent {
+  margin: 15px;
 }
