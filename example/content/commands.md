@@ -1,4 +1,4 @@
 # Commands
  ---
-## Example
+### Example
 This is a basic Example

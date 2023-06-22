@@ -1,4 +1,4 @@
 # Configurations
  ---
-## Example
+### Example
 This is a basic Example
