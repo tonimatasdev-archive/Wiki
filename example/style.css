@@ -76,3 +76,10 @@ h1 {
 .wikiContent {
   margin: 15px;
 }
+
+pre code {
+    display: block;
+    padding: 10px;
+    background-color: #262b32;
+    border-radius: 5px;
+}
