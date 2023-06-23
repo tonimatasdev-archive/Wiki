@@ -15,10 +15,10 @@ body {
 
 #header {
   background-color: #151920;
-  border-radius: 12px;
-  border: 1px solid #686f79;
+  border-radius: 0 0 12px 12px;
+  border: 2px solid #686f79;
+  border-top: 0;
   padding: 10px;
-  margin-top: 16px;
 }
 
 h1 {
@@ -40,7 +40,7 @@ h1 {
   width: 200px;
   min-width: 200px;
   border-radius: 12px;
-  border: 1px solid #686f79;
+  border: 2px solid #686f79;
 }
 
 #buttons {
@@ -55,7 +55,7 @@ h1 {
   background-color: #262b32;
   color: #fff;
   border-radius: 12px;
-  border: 1px solid #686f79;
+  border: 2px solid #686f79;
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
@@ -67,7 +67,7 @@ h1 {
 #main-content {
   background-color: #151920;
   border-radius: 12px;
-  border: 1px solid #686f79;
+  border: 2px solid #686f79;
   margin-left: 16px;
   width: 100%;
   box-sizing: border-box;
