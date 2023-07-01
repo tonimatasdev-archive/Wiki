@@ -85,6 +85,10 @@ body {
     padding: 0;
 }
 
+#buttons a {
+    text-decoration: none;
+}
+
 .sidebarButton {
     display: block;
     padding: 10px;
