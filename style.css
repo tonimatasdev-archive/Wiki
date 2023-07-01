@@ -1,7 +1,56 @@
 body {
-  background-color: #000509;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    background-color: #000509;
+    font-family: Verdana, sans-serif;
+    margin: 0px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    background-color: #151920;
+    border-radius: 0 0 12px 12px;
+    border: 2px solid #686f79;
+    border-top: 0;
+    padding: 2px;
+    margin: 0 300px;
+}
+
+#header h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+#links {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+#links li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#links a {
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#links li:after {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -6px;
+    content: "";
+    display: block;
+    background-color: white;
+    transition: 0.3s linear;
+}
+
+#links li:hover:after {
+  width: 100%;
 }
