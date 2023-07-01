@@ -16,23 +16,31 @@
     <!-- Get wiki content -->
     <script>
         getContent('home');
-        getContent('configurations');
         getContent('commands');
+        getContent('configurations');
+        getContent('ignore');
+        getContent('groups');
     </script>
 </head>
 
 <body>
-<div id="container">
-    <div id="header">
-        <h1>PerWorldPlugins</h1>
-    </div>
+<div id="header">
+    <h1>TonimatasDEV Wiki</h1>
 
+    <ul id="links">
+        <li><a href="https://wiki.tonimatas.dev">Return</a></li>
+    </ul>
+</div>
+
+<div id="container">
     <div id="content">
         <div id="sidebar">
             <ul id="buttons">
                 <li><a id="homeButton" class="sidebarButton" onclick="showContent('home')">Home</a></li>
-                <li><a id="configurationsButton" class="sidebarButton" onclick="showContent('configurations')">Configurations</a></li>
                 <li><a id="commandsButton" class="sidebarButton" onclick="showContent('commands')">Commands</a></li>
+                <li><a id="configurationsButton" class="sidebarButton" onclick="showContent('configurations')">Configurations</a></li>
+                <li><a id="ignoreButton" class="sidebarButton" onclick="showContent('ignore')">Ignore</a></li>
+                <li><a id="groupsButton" class="sidebarButton" onclick="showContent('groups')">Groups</a></li>
             </ul>
         </div>
 
@@ -42,12 +50,20 @@
                 <div id="home-markdown"></div>
             </div>
 
+            <div id="commands" class="wikiContent" style="display: none;">
+                <div id="commands-markdown"></div>
+            </div>
+
             <div id="configurations" class="wikiContent" style="display: none;">
                 <div id="configurations-markdown"></div>
             </div>
 
-            <div id="commands" class="wikiContent" style="display: none;">
-                <div id="commands-markdown"></div>
+            <div id="ignore" class="wikiContent" style="display: none;">
+                <div id="ignore-markdown"></div>
+            </div>
+
+            <div id="groups" class="wikiContent" style="display: none;">
+                <div id="groups-markdown"></div>
             </div>
         </div>
     </div>
