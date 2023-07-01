@@ -2,6 +2,7 @@ body {
     background-color: #000509;
     font-family: Verdana, sans-serif;
     margin: 0px;
+    padding: 0px;
 }
 
 #header {
@@ -52,5 +53,5 @@ body {
 }
 
 #links li:hover:after {
-  width: 100%;
+    width: 100%;
 }

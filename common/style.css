@@ -1,80 +1,117 @@
 body {
-  background-color: #000509;
-  color: #fff;
-  font-family: Verdana, sans-serif, Arial;
-  margin: 0;
-  padding: 0;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  margin: 0 320px;
+    background-color: #000509;
+    color: #fff;
+    font-family: Verdana, sans-serif, Arial;
+    margin: 0;
+    padding: 0;
 }
 
 #header {
-  background-color: #151920;
-  border-radius: 0 0 12px 12px;
-  border: 2px solid #686f79;
-  border-top: 0;
-  padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #151920;
+    border-radius: 0 0 12px 12px;
+    border: 2px solid #686f79;
+    border-top: 0;
+    padding: 2px;
+    margin: 0 300px;
 }
 
-h1 {
-  color: white;
-  margin: 0;
-  padding: 0;
+#header h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+#links {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+#links li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#links a {
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#links li:after {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -6px;
+    content: "";
+    display: block;
+    background-color: white;
+    transition: 0.3s linear;
+}
+
+#links li:hover:after {
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 320px;
 }
 
 #content {
-  display: flex;
-  margin-top: 16px;
+    display: flex;
+    margin-top: 16px;
 }
 
 #sidebar {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  background-color: #151920;
-  width: 200px;
-  min-width: 200px;
-  border-radius: 12px;
-  border: 2px solid #686f79;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #151920;
+    width: 200px;
+    min-width: 200px;
+    border-radius: 12px;
+    border: 2px solid #686f79;
 }
 
 #buttons {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .sidebarButton {
-  display: block;
-  padding: 10px;
-  margin: 10px 10px;
-  background-color: #262b32;
-  color: #fff;
-  border-radius: 12px;
-  border: 2px solid #686f79;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
+    display: block;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: #262b32;
+    color: #fff;
+    border-radius: 12px;
+    border: 2px solid #686f79;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
 }
 
 .sidebarButton:hover {
-  background-color: #777;
+    background-color: #777;
 }
 
 #main-content {
-  background-color: #151920;
-  border-radius: 12px;
-  border: 2px solid #686f79;
-  margin-left: 16px;
-  width: 100%;
-  box-sizing: border-box;
+    background-color: #151920;
+    border-radius: 12px;
+    border: 2px solid #686f79;
+    margin-left: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .wikiContent {
-  margin: 15px;
+    margin: 15px;
 }
 
 pre code {
